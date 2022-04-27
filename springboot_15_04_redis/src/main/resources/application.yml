@@ -1,0 +1,13 @@
+spring:
+  # redis配置
+  redis:
+    host: 192.168.0.110
+    port: 6379
+    password: 123456
+    client-type: jedis # 默认为lettuce
+    # 还可以进一步配置
+    jedis:
+      pool:
+        enabled: true
+        max-active: 16
+        min-idle: 8

@@ -1,0 +1,75 @@
+country: China
+province: Beijing
+city: Beijing
+area: Haidian
+
+port: 8080
+
+party: true
+
+birthday: 1949-10-01
+
+user:
+  name: zhangsan
+  age: 17
+
+user2:
+  name: lisi
+  age: 18
+
+a:
+  b:
+    c:
+      d:
+        e: 123
+
+habits:
+  - game
+  - music
+  - sleep
+
+habits2: [game, music, sleep]
+
+users:
+  - name: zhangsan
+    age: 40
+  - name: lisi
+    age: 38
+  - name: wangwu
+    age: 15
+
+users2:
+  -
+    name: zhangsan
+    age: 40
+  -
+    name: lisi
+    age: 38
+  -
+    name: wangwu
+    age: 15
+
+users3: [{name: zhangsan, age: 40}, {name: lisi, age: 38}, {name: wangwu, age: 15}]
+
+server:
+  port: 80
+  servlet:
+    context-path: /test
+
+
+baseDir: C:\windows
+
+# ??${???}????
+tempDir: ${baseDir}\temp
+
+# ????????????????????
+tempDir1: "${baseDir}\temp"
+
+# ?????????????
+# ?spring?????????????????spring??????
+# ??????spring?????
+datasource:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/springboot_db
+  username: root
+  password: 123456

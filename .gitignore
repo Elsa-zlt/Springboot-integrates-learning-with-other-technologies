@@ -1,0 +1,21 @@
+bin/
+###Eclipse
+.settings/
+.classpath
+.project
+###idea
+target/
+out/
+.idea/
+*.idea
+*.iws
+*.iml
+*.ipr
+###JRebel
+rebel.xml
+###MAC
+.DS_Store
+
+### Other
+logs/
+temp/

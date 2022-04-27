@@ -1,0 +1,37 @@
+test:
+  prop: testValue
+
+# 配置数据库和连接池
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+      username: root
+      password: 123456
+      # password: 123
+  # 热部署范围配置
+  devtools:
+    restart:
+      # 设置不参与热部署的文件和文件夹（即修改后不重启）
+      exclude: static/**,public/**,config/application.yml
+      #是否可用
+      # enabled: false
+
+# 配置MP
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+testcase:
+  randomBook:
+    id: ${random.int}
+    id2: ${random.int(10)} # 生成10以内的整数
+    type: ${random.int(5, 10)} # 生成5-10之间的整数
+    name: 糖果墙${random.value}
+    uuid: ${random.uuid}
+    publicTime: ${random.long}

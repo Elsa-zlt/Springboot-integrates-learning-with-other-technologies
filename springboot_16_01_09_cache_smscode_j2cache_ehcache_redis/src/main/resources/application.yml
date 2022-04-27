@@ -1,0 +1,3 @@
+# 配置j2cache
+j2cache:
+  config-location: j2cache.properties

@@ -1,0 +1,47 @@
+# 配置数据库和连接池
+# 配法1：
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+#      username: root
+#      password: 123456
+
+# 配法2：
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+#    username: root
+#    password: 123456
+    # type: com.alibaba.druid.pool.DruidDataSource
+
+# Hikari数据源详细配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+      maximum-pool-size: 50
+      minimum-idle: 30
+      idle-timeout: 30000
+
+  # 热部署范围配置
+  devtools:
+    restart:
+      # 设置不参与热部署的文件和文件夹（即修改后不重启）
+      exclude: static/**,public/**,config/application.yml
+      #是否可用
+      # enabled: false
+
+# 配置MP
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

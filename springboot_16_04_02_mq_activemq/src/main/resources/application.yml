@@ -1,0 +1,9 @@
+spring:
+  activemq:
+    broker-url: tcp://192.168.0.102:61616
+  jms:
+    # 是否使用发布订阅模型，默认为false，点对点模型
+    pub-sub-domain: true
+    template:
+      # 指定消息队列的名字
+      default-destination: jacktgq

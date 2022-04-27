@@ -1,0 +1,27 @@
+server:
+  port: 80
+
+spring:
+  # 配置数据库和连接池
+  datasource:
+    url: jdbc:h2:~/test
+    hikari:
+      driver-class-name: org.h2.Driver
+      username: sa
+      password: 123456
+      # maximum-pool-size: 50
+      # minimum-idle: 30
+      # idle-timeout: 30000
+
+  # JdbcTemplate的一些配置
+#  jdbc:
+#    template:
+#      query-timeout: 30s # 指定查询超时时间
+#      max-rows: 500 # 最大查询条数
+#      fetch-size: 500 # 数据条数比较多的时候，一次拿多少条数据
+
+  # 启用H2的控制台
+  h2:
+    console:
+      enabled: true
+      path: /h2

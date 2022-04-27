@@ -1,0 +1,13 @@
+spring:
+  cache:
+    type: redis
+    redis:
+      # 是否使用缓存命名空间作为前缀，如：smsCode::18866668888，默认为true
+      use-key-prefix: true
+      cache-null-values: true # 是否缓存空值
+      key-prefix: aa # use-key-prefix为false的时候该项不生效
+      time-to-live: 10s # 缓存失效时间
+  redis:
+    host: 192.168.0.110
+    port: 6379
+    password: 123456

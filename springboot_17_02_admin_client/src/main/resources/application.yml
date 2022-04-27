@@ -1,0 +1,26 @@
+# 当前SpringBootAdminClient客户端端口号
+server:
+  port: 8081
+
+spring:
+  boot:
+    admin:
+      client:
+        # SpringbootAdminServer Web服务url地址
+        url: http://localhost:8080
+# 配置开放给服务器端监控信息
+management:
+  endpoint:
+    health:
+      # 健康状况的详细信息是否上传到服务器，默认为never
+      show-details: always
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        # 开放所有的指标信息，默认为health
+        include: "*"
+    enabled-by-default: true
+info:
+  author: 123

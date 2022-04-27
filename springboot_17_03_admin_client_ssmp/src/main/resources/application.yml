@@ -1,0 +1,49 @@
+# 配置端口
+server:
+  port: 9999
+
+# 配置数据库和连接池
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+      username: root
+      password: 123456
+      # password: 123
+  boot:
+    admin:
+      client:
+        # SpringbootAdminServer Web服务url地址
+        url: http://localhost:8080
+
+# 配置开放给服务器端监控信息
+management:
+  endpoint:
+    health:
+      # 健康状况的详细信息是否上传到服务器，默认为never
+      show-details: always
+    info:
+      # 默认为true
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        # 开放所有的指标信息，默认为health
+        include: "*"
+    enabled-by-default: true
+
+info:
+  appName: @project.artifactId@
+  version: @project.version@
+  company: 糖果编程之家
+  author: 123
+
+# 配置MP
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

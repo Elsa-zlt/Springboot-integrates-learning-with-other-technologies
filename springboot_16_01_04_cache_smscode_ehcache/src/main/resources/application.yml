@@ -1,0 +1,6 @@
+spring:
+  cache:
+    type: ehcache
+    # 如果配置文件改名了，可以打开下面的配置指定配置文件路径
+    # ehcache:
+      # config: ehcache-xxx.xml

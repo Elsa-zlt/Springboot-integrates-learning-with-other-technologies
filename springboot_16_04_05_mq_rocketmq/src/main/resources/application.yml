@@ -1,0 +1,5 @@
+rocketmq:
+  name-server: localhost:9876
+  # 指定生产者所属组
+  producer:
+    group: group_rocketmq

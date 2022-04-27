@@ -1,0 +1,26 @@
+# 配置数据库和连接池
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+      maximum-pool-size: 50
+      minimum-idle: 30
+      # idle-timeout: 30000
+
+  # JdbcTemplate的一些配置
+  jdbc:
+    template:
+      query-timeout: 30s # 指定查询超时时间
+      max-rows: 500 # 最大查询条数
+      fetch-size: 500 # 数据条数比较多的时候，一次拿多少条数据
+
+  # 热部署范围配置
+  devtools:
+    restart:
+      # 设置不参与热部署的文件和文件夹（即修改后不重启）
+      exclude: static/**,public/**,config/application.yml
+      #是否可用
+      # enabled: false

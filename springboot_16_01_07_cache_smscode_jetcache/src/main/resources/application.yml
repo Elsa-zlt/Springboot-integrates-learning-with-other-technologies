@@ -1,0 +1,48 @@
+# 配置数据库和连接池
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springboot_db?serverTimezone=UTC
+      username: root
+      password: 123456
+# 配置MP
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 配置jetcache
+jetcache:
+  areaInCacheName: false # 是否把area加入的缓存的key中，默认为true
+  # 本地方案
+  local:
+    default:
+      type: linkedhashmap
+      keyConvertor: fastjson # 将对象转换成key使用的技术，这里转成json
+      # limit: 100
+  # 远程方案
+  remote:
+    default:
+      type: redis
+      host: 192.168.0.110
+      port: 6379
+      password: 123456
+      # keyConvertor: fastjson
+      # valueEncoder: java
+      # valueDecoder: java
+      poolConfig:
+        # minIdle: 5
+        # maxIdle: 20
+        maxTotal: 50
+      # 如果自定义命名空间，需要在@CreateCache注解中添加area=“sms”，不写默认为default
+#    sms:
+#      type: redis
+#        host: localhost
+#        port: 6379
+#        password: 123456
+#        poolConfig:
+#          maxTotal: 50
