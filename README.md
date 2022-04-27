@@ -242,15 +242,15 @@ kill -9 <pid>
 
 * 方法1：设置程序参数，指定文件名（不包含后缀），如：`--spring.config.name=ebank`
 
-![image-20220121134942535](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220121134942535.png)
+![image-20220121134942535](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220121134942535.png)
 
 * 方法2：指定配置文件的路径，如：`--spring.config.location=classpath:/ebank.yml`
 
-![image-20220121135527619](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220121135527619.png)
+![image-20220121135527619](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220121135527619.png)
 
 * 还可以指定多个配置文件，如：`--spring.config.location=classpath:/ebank.yml,classpath:/ebank-server.yml`
 
-![image-20220121140035574](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220121140035574.png)
+![image-20220121140035574](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220121140035574.png)
 
 ### 10. 多环境配置
 
@@ -499,14 +499,14 @@ spring:
 
 1. 在设置中勾选
 
-![image-20220122192552887](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220122192552887.png)
+![image-20220122192552887](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220122192552887.png)
 
 2. 按快捷键`CTRL + SHIFT + ALT + /`，在弹出的菜单中选择第一项，注册表，或者直接按`CTRL + ALT + M`调出注册表；
 
-![image-20220122193117350](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220122193117350.png)
+![image-20220122193117350](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220122193117350.png)
 
 3. 在注册表项中勾选`compiler.automake.allow.when.app.running`
-![image-20220122194309467](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220122194309467.png)
+![image-20220122194309467](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220122194309467.png)
 4. idea新版本`2021.3.1`中在注册表中找不到改选项，需要在高级设置中进行设置。
     ![image-20220122193933991](C:\Users\Elsa_zlt\AppData\Roaming\Typora\typora-user-images\image-20220122193933991.png)
 
@@ -549,7 +549,7 @@ System.setProperty("spring.devtools.restart.enabled", "false");
 
 5. 使用`@ConfigurationProperties(prefix="xxx")`注解后`idea`工具会报一个警告`Spring Boot Configuration Annotation Processor not configured`
 
-   ![image-20220123172141642](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220123172141642.png)
+   ![image-20220123172141642](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220123172141642.png)
 
    只需要在`pom.xml`中加上如下依赖刷新即可消除该警告
 
@@ -1042,11 +1042,11 @@ spring:
 
 3. 在浏览器中输入访问`H2`控制台地址
 
-   ![image-20220124170318554](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220124170318554.png)
+   ![image-20220124170318554](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220124170318554.png)
 
 4. 输入默认密码：`123456`，然后点连接，会跳转到控制台主页
 
-   ![image-20220124170509519](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220124170509519.png)
+   ![image-20220124170509519](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220124170509519.png)
 
 5. 可以写`sql`语句建表，并插入几条数据
 
@@ -1066,9 +1066,9 @@ spring:
 
    
 
-   ![image-20220124170949962](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220124170949962.png)
+   ![image-20220124170949962](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220124170949962.png)
 
-   ![image-20220124171610075](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220124171610075.png)
+   ![image-20220124171610075](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220124171610075.png)
 
    查询`tbl_book`表中的数据
 
@@ -1076,7 +1076,7 @@ spring:
    select * from tbl_book;
    ```
 
-   ![image-20220124171707774](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220124171707774.png)
+   ![image-20220124171707774](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220124171707774.png)
 
 6. 写代码连接`H2`数据库，需要注意启动测试类连接H2数据库的时候需要将之前的H2控制台的`springboot`程序先停止，否则会造成端口占用，测试类报错。
 
@@ -1305,30 +1305,30 @@ redis-cli.exe -h 192.168.0.110 -p 6379 -a "123456" # 123456是密码
 
 由于黑窗口操作较为繁琐，这里推荐使用带图形化界面的客户端`robo3t`，启动`robo3t`，创建一个连接
 
-![image-20220125005852352](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125005852352.png)
+![image-20220125005852352](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125005852352.png)
 打开这个连接
 
-![image-20220125005941396](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125005941396.png)
+![image-20220125005941396](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125005941396.png)
 
 右击左侧连接名，在右键菜单中选择`Create Database`，新建一个数据库
 
-![image-20220125010258643](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125010258643.png)
+![image-20220125010258643](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125010258643.png)
 
 填写数据库名称
 
-![image-20220125010907061](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125010907061.png)
+![image-20220125010907061](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125010907061.png)
 
 展开数据库名，右击`Collections`再新建一个`Collection`
 
-![image-20220125011100353](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125011100353.png)
+![image-20220125011100353](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125011100353.png)
 
 填写`collection`名称
 
-![image-20220125011142924](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125011142924.png)
+![image-20220125011142924](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125011142924.png)
 
 右击新建的`Collection book`，会弹出一个查询界面，可以在文本框中填写指令对`Collection book`进行操作
 
-![image-20220125011509450](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125011509450.png)
+![image-20220125011509450](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125011509450.png)
 
 ```java
 // 查询所有
@@ -1409,7 +1409,7 @@ class MongodbApplicationTests {
 
    解压`es`的安装包，然后去bin目录下双击`elasticsearch.bat`启动`es`服务器，然后就可以去浏览器输入`http://localhost:9200/`
 
-![image-20220125164120683](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125164120683.png)
+![image-20220125164120683](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125164120683.png)
 
 ​		如果有正常的`json`返回值，那么说明`es`启动正常
 
@@ -1425,7 +1425,7 @@ class MongodbApplicationTests {
 
    在`es`的`plugin`目录下新建一个ik文件夹（建文件夹是为了方便管理），然后把下载好的`ik`分词器压缩包中的内容解压到ik目录下
 
-![image-20220125165532370](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125165532370.png)
+![image-20220125165532370](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125165532370.png)
 
 ​		关闭当前`es`启动的黑窗口，去`es`的bin目录下，双击`elasticsearch.bat`，重新启动`es`
 
@@ -1464,19 +1464,19 @@ class MongodbApplicationTests {
    }
    ```
 
-![image-20220125182316594](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125182316594.png)
+![image-20220125182316594](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125182316594.png)
 
 ​		返回如下提示就表示新建索引成功
 
-![image-20220125182719019](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125182719019.png)
+![image-20220125182719019](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125182719019.png)
 
 3. 查询索引
 
-![image-20220125182950127](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125182950127.png)
+![image-20220125182950127](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125182950127.png)
 
 4. 删除索引
 
-   ![image-20220125192002248](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125192002248.png)
+   ![image-20220125192002248](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125192002248.png)
 
 [P103 实用开发篇-100-ES文档操作](https://www.bilibili.com/video/BV15b4y1a7yG?p=103)
 
@@ -1486,19 +1486,19 @@ class MongodbApplicationTests {
 
    方式1：`http://localhost:9200/books/_doc`
 
-![image-20220125194113251](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125194113251.png)
+![image-20220125194113251](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125194113251.png)
 
 ​		方式2：`http://localhost:9200/books/_doc/221432414`，其中`221432414`是文档中的`_id`属性，如果不指定，则随机生成
 
-![image-20220125205247540](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125205247540.png)
+![image-20220125205247540](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125205247540.png)
 
 ​		方式3：`http://localhost:9200/books/_create/221432414`，其中`221432414`是文档中的`_id`属性，这里不指定会报错
 
-​		![image-20220125203036653](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125203036653.png)
+​		![image-20220125203036653](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125203036653.png)
 
 ​		注：如果在新建的过程中出现`[TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block]`的问题，可以发送下面的请求解决
 
-![image-20220125203418217](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125203418217.png)
+![image-20220125203418217](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125203418217.png)
 
 如果上面的方法也不能解决，检查一下自己的`es`安装目录所在磁盘的可用空间是否太小，默认必须大于`5%`才可以，比如磁盘空间500G, 需要至少`25G`的可用空间才可以。后来清了磁盘大于`5%`也不行，后来用这个方法解决了：[Elasticsearch flood stage disk watermark exceeded](https://www.hellopp.cn/page/61854946a69f0e0ba433fe39)
 
@@ -1506,19 +1506,19 @@ class MongodbApplicationTests {
 
    * 查询全部文档
 
-   ![image-20220125205830308](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125205830308.png)
+   ![image-20220125205830308](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125205830308.png)
 
    * 查询单个文档
 
-   ![image-20220125205708735](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220125205708735.png)
+   ![image-20220125205708735](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220125205708735.png)
 
    * 按条件查询
 
-     ![image-20220126004351659](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126004351659.png)
+     ![image-20220126004351659](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126004351659.png)
    
 3. 删除文档
 
-   ![image-20220126005031342](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126005031342.png)
+   ![image-20220126005031342](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126005031342.png)
 
 4. 修改文档
 
@@ -1526,15 +1526,15 @@ class MongodbApplicationTests {
 
    先查询一下
 
-   ![image-20220126005606644](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126005606644.png)
+   ![image-20220126005606644](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126005606644.png)
 
    发起请求执行修改操作，这里请求体里面只填写要修改的属性
 
-   ![image-20220126005900814](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126005900814.png)
+   ![image-20220126005900814](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126005900814.png)
 
    再查询一下
 
-   ![image-20220126005941445](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126005941445.png)
+   ![image-20220126005941445](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126005941445.png)
 
    发现修改后的文档，另外两个没有修改的属性没有了，这不是期望的效果，这种请求的修改方式是全覆盖方式的修改。
 
@@ -1542,11 +1542,11 @@ class MongodbApplicationTests {
 
    注意：<font color="red">这里发送的是`POST`请求，而上面的全量修改发送的是`PUT`请求</font>
 
-   ![image-20220126011856475](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126011856475.png)
+   ![image-20220126011856475](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126011856475.png)
 
    修改之后再查询一下
 
-   ![image-20220126011948653](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220126011948653.png)
+   ![image-20220126011948653](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220126011948653.png)
 
 [P104 实用开发篇-101-SpringBoot整合ES客户端操作](https://www.bilibili.com/video/BV15b4y1a7yG?p=104)
 
@@ -1845,7 +1845,7 @@ public Book getById(Serializable id) {
         ```java
         public interface SMSCodeService {
             String sendCodeToSMS(String phone);
-
+        
             boolean checkCode(SMSCode smsCode);
         }
         ```
@@ -2369,7 +2369,7 @@ public Book getById(Serializable id) {
 
 另附：`jetcache`详细配置属性
 
-![image-20220214140351959](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220214140351959.png)
+![image-20220214140351959](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220214140351959.png)
 
 ##### springboot_16_01_08_cache_smscode_jetcache_method
 
@@ -2612,7 +2612,7 @@ public Book getById(Serializable id) {
 
    更详细的配置内容可以去`j2cache`的`jar`包路径下寻得
 
-   ![image-20220214181819635](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220214181819635.png)
+   ![image-20220214181819635](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220214181819635.png)
 
 3. 在`SMSCodeServiceImpl`类中编写`j2cache`相关代码
 
@@ -2671,11 +2671,11 @@ public Book getById(Serializable id) {
 
      冲突的意思是`slf4j-simple`和`logback-classic`发生了冲突，这里选择保留`springboot`默认的`logback`日志，排除`slf4j-simple`。打开`maven`面板，选中项目，然后点击显示依赖项按钮，
 
-     ![image-20220214213153252](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220214213153252.png)
+     ![image-20220214213153252](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220214213153252.png)
 
      会弹出一个依赖项拓扑图，在拓扑图中寻找到`slf4j-simple`的上层包为`j2cache-core`
 
-     ![image-20220214213640009](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220214213640009.png)
+     ![image-20220214213640009](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220214213640009.png)
 
      去`pom.xml`中的`j2cache-core`的依赖中排除`slf4j-simple`即可
 
@@ -2823,15 +2823,15 @@ j2cache.l2-cache-open = false
 
   1. 进入`QQ`邮箱主页，找到设置，然后点击账户选项
 
-     ![image-20220215014949660](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215014949660.png)
+     ![image-20220215014949660](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215014949660.png)
 
   2. 鼠标滚轮往下滑，找到`POP3/SMTP`服务开启的地方
 
-     ![image-20220215015249141](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215015249141.png)
+     ![image-20220215015249141](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215015249141.png)
 
      3. 按照提示发送短信，点击我已发送，然后记录一下授权码，一会儿配置文件中使用
 
-     ![image-20220215015351683](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215015351683.png)
+     ![image-20220215015351683](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215015351683.png)
 
   
 
@@ -2839,15 +2839,15 @@ j2cache.l2-cache-open = false
 
   1. 进入`163`邮箱主页，点击设置，选择`POP3/SMTP/IMAP`
 
-     ![image-20220215015802106](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215015802106.png)
+     ![image-20220215015802106](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215015802106.png)
 
   2. 点击开启`IMAP/SMTP`服务
 
-     ![image-20220215020216002](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215020216002.png)
+     ![image-20220215020216002](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215020216002.png)
 
   3. 发送短信获取授权码
 
-     ![image-20220215020459960](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215020459960.png)
+     ![image-20220215020459960](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215020459960.png)
 
 `spring`整合`mail`
 
@@ -2929,11 +2929,11 @@ j2cache.l2-cache-open = false
 
    运行测试类，去收件邮箱中查看消息接收到了
 
-   ![image-20220215022452235](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215022452235.png)
+   ![image-20220215022452235](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215022452235.png)
 
    如果`msg.setFrom(from + "(钟良堂)")`，那么会将收件人的邮箱前加上这个备注名称
 
-   ![image-20220215022959431](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215022959431.png)
+   ![image-20220215022959431](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215022959431.png)
 
 [P124 实用开发篇-120-发送多部件邮件](https://www.bilibili.com/video/BV15b4y1a7yG?p=124)
 
@@ -2974,7 +2974,7 @@ j2cache.l2-cache-open = false
 
   去邮箱中查看消息，图片和文件都顺利接收到了
 
-![image-20220215030553525](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215030553525.png)
+![image-20220215030553525](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215030553525.png)
 
 #### 16.4 消息
 
@@ -2982,15 +2982,15 @@ j2cache.l2-cache-open = false
 
 [P125 实用开发篇-121-消息简介](https://www.bilibili.com/video/BV15b4y1a7yG?p=125) 
 
-![image-20220215032443690](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215032443690.png)
+![image-20220215032443690](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215032443690.png)
 
-![image-20220215032353037](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215032353037.png)
+![image-20220215032353037](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215032353037.png)
 
-![image-20220215032923713](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215032923713.png)
+![image-20220215032923713](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215032923713.png)
 
-![image-20220215033030437](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215033030437.png)
+![image-20220215033030437](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215033030437.png)
 
-![image-20220215033127986](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215033127986.png)
+![image-20220215033127986](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215033127986.png)
 
 [P126 实用开发篇-122-购物订单案例-发送短信](https://www.bilibili.com/video/BV15b4y1a7yG?p=126)
 
@@ -3101,25 +3101,25 @@ j2cache.l2-cache-open = false
 
 运行过程中报错了，发现了我电脑上的`1883`端口被占用
 
-![image-20220215145018673](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215145018673.png)
+![image-20220215145018673](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215145018673.png)
 
 启动一个命令行，输入`netstat -ano | findstr "1883"`
 
-![image-20220215145208792](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215145208792.png)
+![image-20220215145208792](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215145208792.png)
 
 结果居然什么也没查出来，这就奇怪了。没办法先去配置文件里面改个端口吧，编辑软件目录的`conf\activemq.xml`文件，然后找到<transportConnectors>标签下面的`mqtt`的那一项，将uri里面的端口改成`8888`，
 
-![image-20220215145557387](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215145557387.png)
+![image-20220215145557387](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215145557387.png)
 
 改完后再启动一下`ActiveMQ`，没有报错
 
-![image-20220215152546926](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215152546926.png)
+![image-20220215152546926](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215152546926.png)
 
 去浏览器输入`http://localhost:8161`，账号密码都是`admin`，可以登录到主界面，表示`ActiveMQ`启动正常
 
 <font color="red">注：如果`ActiveMQ`不是安装在本地，比如阿里云或者局域网，需要修改软件目录的`conf\jetty.xml`的`jettyPort`属性，将默认的`localhost`改成实际`IP`地址即可。</font>
 
-![image-20220215162120814](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215162120814.png)
+![image-20220215162120814](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215162120814.png)
 
 [P128 实用开发篇-124-springboot整合ActiveMQ](https://www.bilibili.com/video/BV15b4y1a7yG?p=128)
 
@@ -3188,9 +3188,9 @@ j2cache.l2-cache-open = false
 
    去`MQ`的后台管理页面查看一下数据储存情况
 
-   ![image-20220215170440244](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215170440244.png)
+   ![image-20220215170440244](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215170440244.png)
 
-   ![image-20220215170527955](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215170527955.png)
+   ![image-20220215170527955](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215170527955.png)
 
    消息存取正常。
 
@@ -3230,7 +3230,7 @@ j2cache.l2-cache-open = false
 
    如果使用了发布订阅模型，那么在`ActiveMQ`的管理界面中查看消息，需要在`Topics`选项下面查找（不会发到`Queues`选项下面）。
 
-   ![image-20220215172938462](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215172938462.png)
+   ![image-20220215172938462](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215172938462.png)
 
 ##### springboot_16_04_03_mq_rabbitmq_direct
 
@@ -3246,9 +3246,9 @@ j2cache.l2-cache-open = false
 
   配置环境变量：`ERLANG_HOME`、`PATH`
 
-  ![image-20220215175957645](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215175957645.png)
+  ![image-20220215175957645](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215175957645.png)
 
-  ![image-20220215180107622](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215180107622.png)
+  ![image-20220215180107622](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215180107622.png)
 
 * 安装`RabbitMQ`
 
@@ -3256,39 +3256,39 @@ j2cache.l2-cache-open = false
 
   * 找到`Direct Downloads`的地方，点击直接下载`exe`文件
 
-    ![image-20220215181030165](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215181030165.png)
+    ![image-20220215181030165](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215181030165.png)
 
   * 安装：一键傻瓜式安装
 
   * 启动：先以管理员权限启动一个黑窗口，`cd`到软件安装目录的`rabbitmq_server-3.9.13\sbin`下，输入`rabbitmq-service.bat start`，提示服务已经启动即可。 
 
-    <img src="https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215182444713.png" alt="image-20220215182444713" style="zoom:200%;" />
+    <img src="https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215182444713.png" alt="image-20220215182444713" style="zoom:200%;" />
 
     在任务管理器的服务选项下面也可以找到`RabbitMQ`服务，以后启动和停止就可以在这里操作了
 
-    ![image-20220215182808721](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215182808721.png)
+    ![image-20220215182808721](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215182808721.png)
 
   * 开启图形化管理页面插件
 
     继续在刚才上面的黑窗口中输入`rabbitmq-plugins.bat list`，会以列表的形式枚举自带的所有插件，找到`rabbitmq_management`就是我们需要开启的插件。
 
-    ![image-20220215183330490](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215183330490.png)
+    ![image-20220215183330490](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215183330490.png)
 
     继续输入命令`rabbitmq-plugins.bat enable rabbitmq_management`，然后回车，会显示开启了三个关联的插件。
 
-    ![image-20220215183725933](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215183725933.png)
+    ![image-20220215183725933](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215183725933.png)
 
     再次输入`rabbitmq-plugins.bat list`，这次列表中显示`rabbitmq_management`前面多了`E*`，表示这个插件处于启用状态。
 
     去浏览器中输入[http://localhost:15672/](http://localhost:15672/)，会显示登录界面
 
-    ![image-20220215184050880](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215184050880.png)
+    ![image-20220215184050880](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215184050880.png)
 
     输入账号密码（都是`guest`）,会跳转到`RabbitMQ`管理页面
 
-    ![image-20220215184201664](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215184201664.png)
+    ![image-20220215184201664](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215184201664.png)
 
-    ![image-20220215184224846](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215184224846.png)
+    ![image-20220215184224846](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215184224846.png)
 
 [P130 实用开发篇-126-springboot整合RabbitMQ(direct模式)](https://www.bilibili.com/video/BV15b4y1a7yG?p=130)
 
@@ -3399,7 +3399,7 @@ j2cache.l2-cache-open = false
 
    启动项目以后向消息队列中存值，查看控制台的输出语句，可以知道两个监听器轮询交替被调用。
 
-   ![image-20220215214619331](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215214619331.png)
+   ![image-20220215214619331](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215214619331.png)
 
    
 
@@ -3558,7 +3558,7 @@ j2cache.l2-cache-open = false
 
 5. 令
 
-   ![image-20220215225726767](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220215225726767.png)
+   ![image-20220215225726767](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220215225726767.png)
 
 ##### springbooot_16_05_rocketmq
 
@@ -3571,11 +3571,11 @@ j2cache.l2-cache-open = false
 
   * 配置环境变量：`ROCKETMQ_HOME`、`PATH`、`NAMESRV_ADDR`(建议)：127.0.0.1:9876
 
-  ![image-20220228003122616](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228003122616.png)
+  ![image-20220228003122616](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228003122616.png)
 
-  ![image-20220228003242985](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228003242985.png)
+  ![image-20220228003242985](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228003242985.png)
 
-  ![image-20220228003422761](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228003422761.png)
+  ![image-20220228003422761](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228003422761.png)
 
   
 
@@ -3587,15 +3587,15 @@ j2cache.l2-cache-open = false
 
   * 双击安装目录的`bin`目录下的`mqnamesrv.cmd`启动命名服务器，这时候发生诡异的事情了，黑窗口一闪而过，根据经验，绝对是报错了。为了看到错误，我编辑了`mqnamesrv.cmd`文件，在最后加了一句`pause`，这样执行的时候就算报错了，黑窗口也不会立马关闭。
 
-    ![image-20220228015834363](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228015834363.png)
+    ![image-20220228015834363](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228015834363.png)
 
     再次双击`mqnamesrv.cmd`，看到报了如下的错误：
 
-    ![image-20220228020052679](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228020052679.png)
+    ![image-20220228020052679](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228020052679.png)
 
     我先自己排查下原因，
 
-    ![image-20220228021851485](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228021851485.png)
+    ![image-20220228021851485](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228021851485.png)
 
     在网上查阅了相关资料后，出现问题的原因是，jdk安装路径的问题，我安装jdk的时候默认了C盘的`Program Files`目录下，这个目录中间有空格，就是这个空格导致的问题，可是我去黑窗口输入`javac`、`java -version`等命令，并且`tomcat`、`maven`都可以启动啊，就很奇怪。参考博客：[https://blog.csdn.net/weixin_41720239/article/details/118340382](https://blog.csdn.net/weixin_41720239/article/details/118340382)，知道了问题，下面就有两种解决方案了：
 
@@ -3609,27 +3609,27 @@ j2cache.l2-cache-open = false
 
        * JAVA_HOME路径中的Program Files的空格导致的这个问题，那么在JAVA_HOME外面加上双引号不就行了；
 
-         ![image-20220228015445505](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228015445505.png)
+         ![image-20220228015445505](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228015445505.png)
 
        * 然后再去双击`mqnamesrv.cmd`，运行成功，如下图所示。
 
-         ![image-20220228022559775](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228022559775.png)
+         ![image-20220228022559775](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228022559775.png)
 
   其次再启动`Broker`服务
 
   * 同样的，启动`Broker`服务的时候也会跟上面一样报错，解决方案是修改`runbroker.cmd`文件，给39行的`JAVA_HOME`外面加上双引号，如下图所示。
 
-    ![image-20220228023751164](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228023751164.png)
+    ![image-20220228023751164](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228023751164.png)
 
   * 双击`mqbroker.cmd`文件，等待启动即可，成功的话会提示服务监听在9876端口。
 
-    ![image-20220228030913052](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228030913052.png)
+    ![image-20220228030913052](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228030913052.png)
 
 * 下面验证一下`RocketMQ`服务是否可用
 
   `RocketMQ`的`lib`包下自带了一个`rocketmq-example-4.9.2.jar`的`jar`包，用压缩软件打开一下，下面将会使用`Producer`和`Comsumer`这两个类来验证`RocketMQ`的可用性。步骤如下：
 
-  ![image-20220228025121291](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228025121291.png)
+  ![image-20220228025121291](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228025121291.png)
 
   * 去`RocketMQ`的`bin`目录下，启动黑窗口，敲如下命令：
 
@@ -3637,7 +3637,7 @@ j2cache.l2-cache-open = false
     tools org.apache.rocketmq.example.quickstart.Producer
     ```
 
-    ![image-20220228025749691](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228025749691.png)
+    ![image-20220228025749691](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228025749691.png)
 
     如果`RocketMQ`服务正常的话，会生产1000条消息，
     
@@ -3674,7 +3674,7 @@ j2cache.l2-cache-open = false
       set "JAVA_OPT=%JAVA_OPT% -Duser.home=D:\mq\rocketmq\rocketmq\"
       ```
     
-      ![image-20220228131015786](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228131015786.png)
+      ![image-20220228131015786](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228131015786.png)
     
       改完以后，再依次执行`mqnamesrv.cmd`、`mqbroker.cmd`，启动一个黑窗口，
     
@@ -3686,7 +3686,7 @@ j2cache.l2-cache-open = false
     
       可以看到`Producer`生产的消息发送成功。
     
-      ![image-20220228131921007](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228131921007.png)
+      ![image-20220228131921007](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228131921007.png)
     
       再启动一个黑窗口，输入
     
@@ -3694,7 +3694,7 @@ j2cache.l2-cache-open = false
       tools org.apache.rocketmq.example.quickstart.Consumer
       ```
     
-      ![image-20220228132431255](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228132431255.png)
+      ![image-20220228132431255](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228132431255.png)
     
       可以看到消息的消费者也是成功取到了消息，到此验证了安装的`RocketMQ`是可用的。
 
@@ -3787,7 +3787,7 @@ j2cache.l2-cache-open = false
     http://localhost:8080/orders/1
     ```
 
-    ![image-20220228195328272](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228195328272.png)
+    ![image-20220228195328272](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228195328272.png)
 
     消息存取成功。
 
@@ -3811,7 +3811,7 @@ j2cache.l2-cache-open = false
 
    启动正常如下，默认端口：2181
 
-   ![image-20220228201159709](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228201159709.png)
+   ![image-20220228201159709](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228201159709.png)
 
 2. 启动`kafka`
 
@@ -3823,7 +3823,7 @@ j2cache.l2-cache-open = false
 
    启动正常如下，默认端口：9092
 
-   ![image-20220228201450690](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228201450690.png)
+   ![image-20220228201450690](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228201450690.png)
 
 3. 验证`kafka`是否可用
 
@@ -3845,7 +3845,7 @@ j2cache.l2-cache-open = false
 
      	可以看到有我上面创建的名字为Elsa_zlt的topic
 
-         ![image-20220228202354376](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228202354376.png)
+         ![image-20220228202354376](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228202354376.png)
 
      * 删除`topic`
 
@@ -3871,7 +3871,7 @@ j2cache.l2-cache-open = false
 
    * 如果两个窗口里面可以互相收发消息，说明kafka功能是可用的。
    
-     ![image-20220228204539647](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228204539647.png)
+     ![image-20220228204539647](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228204539647.png)
 
 [P135实用开发篇-131-springboot整合Kafka](https://www.bilibili.com/video/BV15b4y1a7yG?p=135)
 
@@ -3939,7 +3939,7 @@ j2cache.l2-cache-open = false
    http://localhost:8080/orders/1
    ```
 
-   ![image-20220228211417129](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228211417129.png)
+   ![image-20220228211417129](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228211417129.png)
 
    消息存取成功。
 
@@ -3970,7 +3970,7 @@ SpringBootAdmin分为服务器端和客户端：服务器端不涉及业务方�
        </dependency>
        ```
      ```
-   
+      
      ```
    
    ```
@@ -3989,7 +3989,7 @@ SpringBootAdmin分为服务器端和客户端：服务器端不涉及业务方�
    
 4. 启动项目，打开浏览器输入`localhost:8080`就可以进入监控系统的主页了
    
-   ![image-20220228222034286](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228222034286.png)
+   ![image-20220228222034286](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228222034286.png)
    
        由于目前没有监控其他项目，所以显示为空，下面建几个项目由监控系统监控
 
@@ -4029,15 +4029,15 @@ SpringBootAdmin分为服务器端和客户端：服务器端不涉及业务方�
 
     3. 启动项目，打开浏览器输入`localhost:8080`，可以看到当前客户端已经注册到监控系统上了
 
-       ![image-20220228225141758](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228225141758.png)
+       ![image-20220228225141758](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228225141758.png)
 
        点监控墙
 
-       ![image-20220228225214785](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228225214785.png)
+       ![image-20220228225214785](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228225214785.png)
 
        再点击这个注册上来的实例，可以看到当前客户端的详细运行状况信息，不过看到的信息还是很有限，接下来去客户端开放更多的参数信息给监控服务器。
 
-       ![image-20220228225429908](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228225429908.png)
+       ![image-20220228225429908](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228225429908.png)
 
     4. 配置开放所有客户端指标信息给服务器
 
@@ -4069,51 +4069,51 @@ SpringBootAdmin分为服务器端和客户端：服务器端不涉及业务方�
 
        再启动项目，然后去浏览器查看对当前客户端的监控信息，可以看到监控信息非常丰富，包括内存磁盘的占用率，日志、`JVM`、缓存等信息应有尽有。
 
-       ![image-20220228231135649](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228231135649.png)
+       ![image-20220228231135649](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228231135649.png)
 
 ##### springboot_17_03_admin_client_ssmp
 
 * 下面基于`springboot_08_ssmp`拷贝出一个新项目`springboot_17_03_admin_client_ssmp`，然后把这个项目注册到监控服务器上。步骤同上，故略。配置完之后，启动这个项目，然后去浏览器的监控界面上可以看到，有两个监控实例了。
 
-    ![image-20220228235028057](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228235028057.png)
+    ![image-20220228235028057](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228235028057.png)
 
 * 点击查看这个`ssmp`项目的详细信息，可以看到被监控的指标给多了，还可以看到连接的是`mysql`数据库
 
-    ![image-20220228235143461](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228235143461.png)
+    ![image-20220228235143461](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228235143461.png)
 
 * 去浏览器输入`http://localhost/pages/books.html`，多刷新几次，然后再去监控页面去查看关于`ssmp`项目的`http`请求的次数和访问时间的统计
 
-    ![image-20220228235744365](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220228235744365.png)
+    ![image-20220228235744365](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220228235744365.png)
 
 [P138实用开发篇-134-actuator](https://www.bilibili.com/video/BV15b4y1a7yG?p=138)
 
-![image-20220301004201049](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301004201049.png)
+![image-20220301004201049](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301004201049.png)
 
 如`SSMP`项目启动在`80`端口，使用`Postman`访问`http://localhost/actuator`，结果返回了一堆更具体的访问地址
 
-![image-20220301133645720](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301133645720.png)
+![image-20220301133645720](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301133645720.png)
 
 以其中的`health`为例，我们点击这个地址
 
-![image-20220301134219713](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301134219713.png)
+![image-20220301134219713](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301134219713.png)
 
 `postman`会建立一个新的`http`请求，再点击send发送请求
 
-![image-20220301134344858](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301134344858.png)
+![image-20220301134344858](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301134344858.png)
 
 可以看到返回的信息就是`SpringBootAdmin`页面关于`SSMP`项目运行时的健康状况信息
 
-![image-20220301134458497](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301134458497.png)
+![image-20220301134458497](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301134458497.png)
 
 所以这个`SpringBootAdmin`就是通过`http:/ip:port/actuator/端点名称`访问到不同项目的运行指标的。
 
 其他常用端点名称和描述信息如下：
 
-![image-20220301134946953](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301134946953.png)
+![image-20220301134946953](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301134946953.png)
 
-![image-20220301135054788](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301135054788.png)
+![image-20220301135054788](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301135054788.png)
 
-![image-20220301135119792](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301135119792.png)
+![image-20220301135119792](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301135119792.png)
 
 SSMP项目启动的时候会打印一行日志，表示暴露给监控系统的端点数：
 
@@ -4126,15 +4126,15 @@ SSMP项目启动的时候会打印一行日志，表示暴露给监控系统的�
 
 * 还有一个属性`management.endpoints.enabled-by-default`表示开放所有的端点，默认值为`true`，这个所有指的不仅仅是`web`端点，还包括`jmx`等其他访问方式的端点，如Win+R输入`jconsole`，在进程列表中选择`SSMP`项目
 
-  ![image-20220301141637121](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301141637121.png)
+  ![image-20220301141637121](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301141637121.png)
 
   也可以监控这个项目运行时的一些信息
 
-  ![image-20220301141809957](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301141809957.png)
+  ![image-20220301141809957](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301141809957.png)
 
 * 需要知道的是JMX默认开放所有的端点，而web只开放一部分。
 
-  ![image-20220301142142625](https://gitee.com/Elsa_zlt/my_pic/raw/master/image/image-20220301142142625.png)
+  ![image-20220301142142625](https://gitee.com/CandyWall/my_pic/raw/master/image/image-20220301142142625.png)
 
 [P139实用开发篇-135-info端点指标控制](https://www.bilibili.com/video/BV15b4y1a7yG?p=139)
 
